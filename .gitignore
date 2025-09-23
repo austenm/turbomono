@@ -17,6 +17,11 @@ build
 # misc
 .DS_Store
 *.pem
+Thumbs.db
+.idea/
+.vscode/*
+!.vscode/extensions.json
+!.vscode/settings.json
 
 # debug
 npm-debug.log*
@@ -24,6 +29,7 @@ yarn-debug.log*
 yarn-error.log*
 
 # local env files
+.env
 .env.local
 .env.development.local
 .env.test.local
@@ -31,6 +37,18 @@ yarn-error.log*
 
 # turbo
 .turbo
+.swc/
 
 # ui
 dist/
+*.tsbuildinfo
+*.css.map
+*.d.ts.map
+
+# Vite (e.g., Storybook builder)
+.vite/
+.vite-*
+**/.vite/
+
+# Storybook
+storybook-static/
