@@ -8,8 +8,16 @@
     "dist"
   ],
   "exports": {
+    "./postcss.config": "./postcss.config.mjs",
+    "./components/*": "./src/components/*.tsx",
+    "./lib/*": "./src/lib/*",
+    "./lib/utils/*": "./src/lib/utils/*.ts",
     "./styles.css": "./dist/index.css",
-    "./*": "./dist/*.js"
+    "./*": "./dist/*.js",
+    "./hooks/*": [
+      "./src/hooks/*.ts",
+      "./src/hooks/*.tsx"
+    ]
   },
   "license": "MIT",
   "scripts": {
@@ -32,5 +40,12 @@
     "eslint": "^9.33.0",
     "tailwindcss": "^4.1.5",
     "typescript": "5.9.2"
+  },
+  "dependencies": {
+    "@radix-ui/react-slot": "^1.2.3",
+    "class-variance-authority": "^0.7.1",
+    "clsx": "^2.1.1",
+    "lucide-react": "^0.544.0",
+    "tailwind-merge": "^3.3.1"
   }
 }

@@ -2,6 +2,7 @@ import Image from "next/image";
 import { Card } from "@repo/ui/card";
 import { Gradient } from "@repo/ui/gradient";
 import { TurborepoLogo } from "@repo/ui/turborepo-logo";
+import { MinimalButton } from "@repo/ui/components/button-minimal";
 
 const LINKS = [
   {
@@ -59,12 +60,12 @@ export default function Page() {
         <div className="font-sans w-auto pb-16 pt-[48px] md:pb-24 lg:pb-32 md:pt-16 lg:pt-20 flex justify-between gap-8 items-center flex-col relative z-0">
           <div className="z-50 flex items-center justify-center w-full">
             <div className="absolute min-w-[614px] min-h-[614px]">
-              <Image
+              {/* <Image
                 alt="Turborepo"
                 height={614}
                 src="circles.svg"
                 width={614}
-              />
+              /> */}
             </div>
             <div className="absolute z-50 flex items-center justify-center w-64 h-64">
               <Gradient
@@ -83,6 +84,7 @@ export default function Page() {
             conic
           />
           <div className="z-50 flex flex-col items-center justify-center gap-5 px-6 text-center lg:gap-6">
+            <MinimalButton>Button check</MinimalButton>
             <svg
               className="w-[160px] md:w-[200px] fill-black dark:fill-white"
               viewBox="0 0 506 50"

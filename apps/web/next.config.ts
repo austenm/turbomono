@@ -7,6 +7,7 @@ const nextConfig: NextConfig = {
   eslint: {
     ignoreDuringBuilds: true,
   },
+  transpilePackages: ["@repo/ui", "@repo/tailwind-config"]
 };
 
 export default nextConfig;
