@@ -1,0 +1,189 @@
+:root {
+  --background: 28 22% 98%;
+  --foreground: 24 12% 12%;
+
+  --card: 28 22% 98%;
+  --card-foreground: 24 12% 12%;
+
+  --popover: 28 22% 98%;
+  --popover-foreground: 24 12% 12%;
+
+  --primary: 242 88% 35%;
+  --primary-foreground: 0 0% 98%;
+  
+  --secondary: 28 18% 96%;
+  --secondary-foreground: 24 12% 15%;
+
+  --muted: 28 14% 94%;
+  --muted-foreground: 25 12% 38%;
+
+  --accent: 242 40% 93%;
+  --accent-foreground: 242 82% 24%;
+
+  --destructive: 6 78% 51%;
+  --destructive-foreground: 0 0% 98%;
+
+  --border: 28 20% 85%;
+  --input: 28 14% 85%;
+  --ring: 242 88% 42%;
+
+  --radius: 0.6rem;
+
+  --primary-h: 242;
+  --primary-s: 88.2%;
+  --primary-l: 34.9%;
+
+  --primary-hover: var(--primary-h) var(--primary-s) calc(var(--primary-l) - 5%);
+  --primary-active: var(--primary-h) var(--primary-s) calc(var(--primary-l) - 10%);
+
+  --primary-soft: var(--primary-h) 38% 94%;
+  --primary-soft-foreground: var(--primary-h) 78% 22%;
+  --primary-ghost: var(--primary-h) var(--primary-s) var(--primary-l) / 0.12;
+  --primary-ghost-foreground: var(--primary-h) 78% 22%;
+
+  --primary-gradient: linear-gradient(
+    to bottom,
+    hsl(var(--primary-h) var(--primary-s) calc(var(--primary-l) + 7%)),
+    hsl(var(--primary-h) var(--primary-s) calc(var(--primary-l) - 2%))
+  );
+  --primary-gradient-hover: linear-gradient(
+    to bottom,
+    hsl(var(--primary-h) var(--primary-s) calc(var(--primary-l) + 9%)),
+    hsl(var(--primary-h) var(--primary-s) calc(var(--primary-l) + 1%))
+  );
+  --primary-gradient-active: linear-gradient(
+    to bottom,
+    hsl(var(--primary-h) var(--primary-s) calc(var(--primary-l) + 4%)),
+    hsl(var(--primary-h) var(--primary-s) calc(var(--primary-l) - 4%))
+  );
+
+  --primary-1: hsl(var(--primary) / 0.06);
+  --primary-2: hsl(var(--primary) / 0.12);
+  --primary-3: hsl(var(--primary) / 0.18);
+
+
+  --secondary-h: 28;
+  --secondary-s: 18%;
+  --secondary-l: 96%;
+
+  --secondary-hover: var(--secondary-h) var(--secondary-s) calc(var(--secondary-l) - 4%);
+  --secondary-active: var(--secondary-h) var(--secondary-s) calc(var(--secondary-l) - 8%);
+
+  --secondary-soft: var(--secondary-h) 16% 97%;
+  --secondary-soft-foreground: 24 12% 20%;
+  --secondary-ghost: var(--secondary-h) var(--secondary-s) var(--secondary-l) / 0.10;
+  --secondary-ghost-foreground: 24 12% 20%;
+
+  --secondary-gradient: linear-gradient(
+    to bottom,
+    hsl(var(--secondary-h) var(--secondary-s) calc(var(--secondary-l) - 2%)),
+    hsl(var(--secondary-h) var(--secondary-s) calc(var(--secondary-l) - 6%))
+  );
+  --secondary-gradient-hover: linear-gradient(
+    to bottom,
+    hsl(var(--secondary-h) var(--secondary-s) calc(var(--secondary-l) - 3%)),
+    hsl(var(--secondary-h) var(--secondary-s) calc(var(--secondary-l) - 7%))
+  );
+  --secondary-gradient-active: linear-gradient(
+    to bottom,
+    hsl(var(--secondary-h) var(--secondary-s) calc(var(--secondary-l) - 6%)),
+    hsl(var(--secondary-h) var(--secondary-s) calc(var(--secondary-l) - 10%))
+  );
+
+  --secondary-1: hsl(var(--secondary) / 0.06);
+  --secondary-2: hsl(var(--secondary) / 0.12);
+  --secondary-3: hsl(var(--secondary) / 0.18);
+
+}
+
+.dark {
+  --background: 24 12% 10%;
+  --foreground: 28 22% 96%;
+
+  --card: 24 12% 10%;
+  --card-foreground: 28 22% 96%;
+
+  --popover: 24 12% 10%;
+  --popover-foreground: 28 22% 96%;
+
+  --primary: 242 76% 48%;
+  --primary-foreground: 0 0% 98%;
+
+  --accent: 242 44% 26%;
+  --accent-foreground: 242 76% 88%;
+
+  --secondary: 24 8% 18%;
+  --secondary-foreground: 28 22% 96%;
+
+  --muted: 24 8% 18%;
+  --muted-foreground: 28 10% 68%;
+
+  --border: 24 18% 26%;
+  --input: 24 8% 26%;
+  --ring: 242 76% 54%;
+
+  --primary-h: 242;
+  --primary-s: 76%;
+  --primary-l: 48%;
+
+  --primary-hover: var(--primary-h) var(--primary-s) calc(var(--primary-l) + 6%);
+  --primary-active: var(--primary-h) var(--primary-s) calc(var(--primary-l) + 10%);
+
+  --primary-soft: var(--primary-h) 44% 24%;
+  --primary-soft-foreground: var(--primary-h) 76% 88%;
+  --primary-ghost: var(--primary-h) var(--primary-s) var(--primary-l) / 0.16;
+  --primary-ghost-foreground: var(--primary-h) 76% 88%;
+
+  --primary-gradient: linear-gradient(
+    to bottom,
+    hsl(var(--primary-h) var(--primary-s) calc(var(--primary-l) + 12%)),
+    hsl(var(--primary-h) var(--primary-s) calc(var(--primary-l) + 4%))
+  );
+  --primary-gradient-hover: linear-gradient(
+    to bottom,
+    hsl(var(--primary-h) var(--primary-s) calc(var(--primary-l) + 14%)),
+    hsl(var(--primary-h) var(--primary-s) calc(var(--primary-l) + 6%))
+  );
+  --primary-gradient-active: linear-gradient(
+    to bottom,
+    hsl(var(--primary-h) var(--primary-s) calc(var(--primary-l) + 10%)),
+    hsl(var(--primary-h) var(--primary-s) calc(var(--primary-l) + 2%))
+  );
+
+  --primary-1: hsl(var(--primary) / 0.10);
+  --primary-2: hsl(var(--primary) / 0.18);
+  --primary-3: hsl(var(--primary) / 0.26);
+
+  --secondary-h: 24;
+  --secondary-s: 8%;
+  --secondary-l: 18%;
+
+  --secondary-hover: var(--secondary-h) var(--secondary-s) calc(var(--secondary-l) + 6%);
+  --secondary-active: var(--secondary-h) var(--secondary-s) calc(var(--secondary-l) + 10%);
+
+  --secondary-soft: var(--secondary-h) 10% 22%;
+  --secondary-soft-foreground: 28 22% 92%;
+  --secondary-ghost: var(--secondary-h) var(--secondary-s) var(--secondary-l) / 0.14;
+  --secondary-ghost-foreground: 28 22% 92%;
+
+  --secondary-gradient: linear-gradient(
+    to bottom,
+    hsl(var(--secondary-h) var(--secondary-s) calc(var(--secondary-l) + 8%)),
+    hsl(var(--secondary-h) var(--secondary-s) calc(var(--secondary-l) + 2%))
+  );
+  --secondary-gradient-hover: linear-gradient(
+    to bottom,
+    hsl(var(--secondary-h) var(--secondary-s) calc(var(--secondary-l) + 10%)),
+    hsl(var(--secondary-h) var(--secondary-s) calc(var(--secondary-l) + 4%))
+  );
+  --secondary-gradient-active: linear-gradient(
+    to bottom,
+    hsl(var(--secondary-h) var(--secondary-s) calc(var(--secondary-l) + 6%)),
+    hsl(var(--secondary-h) var(--secondary-s) calc(var(--secondary-l) + 0%))
+  );
+
+  --secondary-1: hsl(var(--secondary) / 0.10);
+  --secondary-2: hsl(var(--secondary) / 0.18);
+  --secondary-3: hsl(var(--secondary) / 0.26);
+
+}

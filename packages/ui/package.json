@@ -10,9 +10,9 @@
   "exports": {
     "./postcss.config": "./postcss.config.mjs",
     "./components/*": "./src/components/*.tsx",
+    "./components": "./src/components/index.ts",
     "./lib/*": "./src/lib/*",
-    "./lib/utils/*": "./src/lib/utils/*.ts",
-    "./styles.css": "./dist/index.css",
+    "./styles.css": "./dist/styles.css",
     "./*": "./dist/*.js",
     "./hooks/*": [
       "./src/hooks/*.ts",
@@ -21,10 +21,10 @@
   },
   "license": "MIT",
   "scripts": {
-    "build:styles": "tailwindcss -i ./src/styles.css -o ./dist/index.css",
+    "build:styles": "tailwindcss -i ./src/styles.css -o ./dist/styles.css",
     "build:components": "tsc",
     "check-types": "tsc --noEmit",
-    "dev:styles": "tailwindcss -i ./src/styles.css -o ./dist/index.css --watch",
+    "dev:styles": "tailwindcss -i ./src/styles.css -o ./dist/styles.css --watch",
     "dev:components": "tsc --watch",
     "lint": "eslint src --max-warnings 0"
   },
